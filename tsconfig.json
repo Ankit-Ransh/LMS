@@ -1,19 +1,17 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "allowJs": true,
-    "checkJs": false,
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "module": "NodeNext",
-    "target": "es2017",
-    "sourceMap": true,
-    "alwaysStrict": true,
-    "strictNullChecks": true
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "resolveJsonModule": true,
+    "types": ["node"]
   },
-  "include": ["src/**/*"],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
